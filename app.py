@@ -17,11 +17,9 @@ def start():
                 id = dms[i]['id']
 
                 if len(message) is not 0 and len(message) < 280:
-                    # prikitiw is the keyword
-                    # if you want to turn off the case sensitive like: priktiw, Prikitiw, pRiKiTiw
-                    # just use lower(message) and check it, but please remove the replace function line
-                    if "-Tamnet" in message:
-                        #message = message.replace("prikitiw", "")
+                    # /imissu is the keyword
+                    if "/imissu" in message:
+                        #message = message.replace("/imissu", "")
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
